@@ -3,8 +3,30 @@ body {
   box-sizing: border-box;
 }
 
-.navbar-header{
-margin-top: 2.5rem;
+section {
+  padding: 60px 0;
+}
+
+
+/* .row-wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+} */
+
+[class*=col-] {
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+
+.header-section {
+  margin-bottom: 54px;
+}
+
+
+.navbar-header {
+  margin-top: 2.5rem;
 }
 
 .nav-item {
@@ -69,8 +91,8 @@ h6 {
 
 .content {
   position: relative;
-  width: 90%;
-  max-width: 400px;
+  width: 100%;
+  max-width: 453px;
   margin: auto;
   overflow: hidden;
 }
@@ -78,10 +100,13 @@ h6 {
 
 .featured_img {
   position: relative;
+  height: 100%;
+
 }
 
 .featured_box {
   position: relative;
+  height: 100%;
 }
 
 .featured_img:after {
@@ -104,13 +129,9 @@ h6 {
   padding-left: 10px;
 }
 
-.featured_box {
-  padding: 0px 10px;
-}
-
 
 .content-overlay {
-  background: rgba(54, 59, 90, 0.7);
+  background: rgba(54, 59, 90, 0.95);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -132,7 +153,7 @@ h6 {
 .content-details {
   position: absolute;
   text-align: center;
-  padding:1em;
+  padding: 1em;
   width: 100%;
   height: 100%;
   top: 50%;
@@ -146,7 +167,7 @@ h6 {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.content-details h3{
+.content-details h3 {
   color: #fff;
   font-weight: 500;
   letter-spacing: 0.15em;
@@ -154,19 +175,16 @@ h6 {
   text-transform: uppercase;
 }
 
-
-.card-button{
- position: absolute;
- bottom: 19px;
+.card-button {
+  position: absolute;
+  bottom: 19px;
 }
 
-
 .featured_box:hover .content-details {
-  top:50%;
+  top: 50%;
   left: 50%;
   opacity: 1;
 }
-
 
 .fadeIn-bottom {
   top: 80%;
@@ -280,28 +298,4 @@ p.content-text {
 #main_footer .footer_bottom p {
   margin-top: 0px
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
