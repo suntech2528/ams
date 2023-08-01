@@ -97,8 +97,6 @@ h2 {
   box-shadow: inset 0 0 0 2000px rgba(18, 20, 30, 0.40);
 }
 
-
-
 .banner-overlay {
   background: rgba(27.59, 29.37, 40.37, 0.90);
   position: absolute;
@@ -108,6 +106,36 @@ h2 {
   top: 0;
   bottom: 0;
   right: 0;
+}
+
+.banner-button {
+  display: flex;
+  height: 60px;
+  padding: 15px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  border: 2px solid #E52346;
+}
+
+.banner-button:hover {
+  border: 2px solid #fff;
+}
+
+.banner-button:hover .btn-text {
+  color: #fff;
+}
+
+#top_banner .button{
+  margin-top: 40px;
+}
+
+.banner-button .btn-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #E52346;
+  line-height: 120%;
 }
 
 .content-wrapper {
@@ -126,12 +154,27 @@ h2 {
   line-height: 25px;
 }
 
+.asm-button {
+  display: inline-flex;
+  height: 60px;
+  padding: 15px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  background: #E52346;
+  color: white;
+}
 
+.asm-button .btn-text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 120%
+}
 
 .content {
   position: relative;
   width: 100%;
-  max-width: 453px;
   margin: auto;
   overflow: hidden;
 }
@@ -145,6 +188,8 @@ h2 {
 .featured_box {
   position: relative;
   height: 100%;
+  margin: 0;
+
 }
 
 .featured_img:after {
@@ -351,29 +396,79 @@ p.content-text {
 .dedication_section .center_text {
   padding: 0px 30px;
 }
-.dedication_section .right_box {margin-top: -130px;}
-.dedication_section .info_box img {padding-bottom: 10px;}
+
+.dedication_section .right_box {
+  margin-top: -130px;
+}
+
+.dedication_section .info_box img {
+  padding-bottom: 10px;
+}
 
 
+
+#owl-demo .item {
+  margin: 3px;
+}
+
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+  position: absolute;
+  right: 153px;
+  bottom: -70px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 17px !important;
+  height: 17px !important;
+  margin: 0 5px !important;
+  background: #E52346 !important;
+
+}
+
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #C9C9C9 !important;
+}
 
 /*VEHICLE PAGE CSS*/
 
-.vehicle_info h1, .vehicle_info p{
+.vehicle_info h1,
+.vehicle_info p {
   text-align: center;
 }
-.vehicles_section .nav-tabs .nav-link, .vehicles_section .nav-tabs {
+
+.vehicles_section .nav-tabs .nav-link,
+.vehicles_section .nav-tabs {
   border: none;
   font-size: 18px;
-font-weight: 600;
-line-height: 32px;
-color: #363B5A;
+  font-weight: 600;
+  line-height: 32px;
+  color: #363B5A;
 }
-.vehicles_section .nav-item .active{
-font-family: Figtree;
-font-size: 18px;
-font-weight: 600;
-line-height: 32px;
-letter-spacing: 0em;
+
+.vehicles_section .nav-item .active {
+  font-family: Figtree;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em;
+}
+
+@media screen and (max-width: 760px) {
+  .button {
+    margin-top: 80px !important;
+  }
+
+  .owl-theme .owl-nav.disabled+.owl-dots {
+    right: 0;
+  }
 }
 #ex1 {text-align:center;}
 .vehicles_section {margin-bottom: 60px;}
