@@ -88,7 +88,10 @@ h6 {
   text-align: left;
   color: #7C809A;
 }
-
+h2 {
+  font-size: 48px;
+  font-weight: 400;
+}
 .content {
   position: relative;
   width: 100%;
@@ -298,4 +301,17 @@ p.content-text {
 #main_footer .footer_bottom p {
   margin-top: 0px
 }
-
+.dedication_section {
+  background: url('../images/background.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.dedication_section [class*=col-] {
+  padding: 0px; 
+  margin:0px;
+}
+.dedication_section .center_text {
+  padding: 0px 30px;
+}
+.dedication_section .right_box {margin-top: -130px;}
+.dedication_section .info_box img {padding-bottom: 10px;}
