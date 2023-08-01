@@ -7,13 +7,6 @@ section {
   padding: 60px 0;
 }
 
-
-/* .row-wrapper {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-} */
-
 [class*=col-] {
   margin-bottom: 20px;
   box-sizing: border-box;
@@ -88,10 +81,53 @@ h6 {
   text-align: left;
   color: #7C809A;
 }
+
 h2 {
   font-size: 48px;
   font-weight: 400;
 }
+
+/* banner */
+.banner-image {
+  height: 100vh;
+  background: url('../images/banner-image.png') center center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(18, 20, 30, 0.40);
+}
+
+
+
+.banner-overlay {
+  background: rgba(27.59, 29.37, 40.37, 0.90);
+  position: absolute;
+  height: 100%;
+  width: 28%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.content-wrapper {
+  z-index: 1;
+}
+
+.content-wrapper h1 {
+  font-size: 58px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 67px;
+  word-wrap: break-word
+}
+
+.content-paragraph {
+  line-height: 25px;
+}
+
+
+
 .content {
   position: relative;
   width: 100%;
@@ -104,7 +140,6 @@ h2 {
 .featured_img {
   position: relative;
   height: 100%;
-
 }
 
 .featured_box {
@@ -301,17 +336,33 @@ p.content-text {
 #main_footer .footer_bottom p {
   margin-top: 0px
 }
+
 .dedication_section {
   background: url('../images/background.svg');
   background-repeat: no-repeat;
   background-position: left center;
 }
+
 .dedication_section [class*=col-] {
-  padding: 0px; 
-  margin:0px;
+  padding: 0px;
+  margin: 0px;
 }
+
 .dedication_section .center_text {
   padding: 0px 30px;
 }
-.dedication_section .right_box {margin-top: -130px;}
-.dedication_section .info_box img {padding-bottom: 10px;}
+
+.dedication_section .right_box {
+  margin-top: -130px;
+}
+
+.dedication_section .info_box img {
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .banner-image {
+    background-size: contain;
+    height: 50vh;
+  }
+}
