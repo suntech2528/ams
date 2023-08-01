@@ -461,10 +461,6 @@ p.content-text {
   letter-spacing: 0em;
 }
 
-#ex1 {
-  text-align: center;
-}
-
 @media screen and (max-width: 760px) {
   .button {
     margin-top: 80px !important;
@@ -474,3 +470,5 @@ p.content-text {
     right: 0;
   }
 }
+#ex1 {text-align:center;}
+.vehicles_section {margin-bottom: 60px;}
