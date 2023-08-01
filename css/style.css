@@ -315,3 +315,26 @@ p.content-text {
 }
 .dedication_section .right_box {margin-top: -130px;}
 .dedication_section .info_box img {padding-bottom: 10px;}
+
+
+
+/*VEHICLE PAGE CSS*/
+
+.vehicle_info h1, .vehicle_info p{
+  text-align: center;
+}
+.vehicles_section .nav-tabs .nav-link, .vehicles_section .nav-tabs {
+  border: none;
+  font-size: 18px;
+font-weight: 600;
+line-height: 32px;
+color: #363B5A;
+}
+.vehicles_section .nav-item .active{
+font-family: Figtree;
+font-size: 18px;
+font-weight: 600;
+line-height: 32px;
+letter-spacing: 0em;
+}
+#ex1 {text-align:center;}
